@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int b;
+	
+	cout << "masukkan panjang pola: ";
+	cin >> b;
+	
+	cout << "pola/b";
+	
+	for( int r = 1; r <= b; r++){
+		for( int h = b; h > r; h--){
+			cout << " ";
+		}
+		for(int l =1; l <= (2*r - 1); l++){
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
